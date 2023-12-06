@@ -9,5 +9,15 @@
 
 // Escribir un programa que lea la puntuacion del usuario e indique su nivel de rendimiento, asi como la cantidad de dinero que recibira el usuario
 
+let puntuacionUsuario = parseFloat(prompt(`Cual es la puntuacion del usuario?`));
 
+if(puntuacionUsuario == 0.0){
+    alert(`Rendimiento Inaceptable... Su salario es: ${2400*puntuacionUsuario}`);
+}else if(puntuacionUsuario == 0.4){
+    alert(`Rendimiento Aceptable... Su salario es: ${2400*puntuacionUsuario}`);
+}else if(puntuacionUsuario >= 0.6){
+    alert(`Rendimiento Meritorio... Su salario es: ${2400*puntuacionUsuario}`);
+}else{
+    alert(`Valor invalido`);
+}
 
